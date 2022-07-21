@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F3F3F3">
+
+    <TextView
+        android:id="@+id/city_name"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#E0E0E0"
+        android:textSize="26dp"
+        android:text="上海市"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="2022-07-21"
+        app:layout_constraintLeft_toRightOf="@id/city_name"
+        app:layout_constraintTop_toTopOf="@id/city_name" />
+
+    <TextView
+        android:id="@+id/day_weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="白天天气："
+        app:layout_constraintLeft_toRightOf="@id/city_name"
+        app:layout_constraintTop_toBottomOf="@id/date"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/night_weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="夜间天气："
+        app:layout_constraintLeft_toRightOf="@id/city_name"
+        app:layout_constraintTop_toBottomOf="@id/day_weather"
+        android:layout_marginTop="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
