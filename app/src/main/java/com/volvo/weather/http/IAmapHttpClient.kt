@@ -1,6 +1,6 @@
-package com.example.myapplication.http
+package com.volvo.weather.http
 
-import com.example.myapplication.http.bean.AllForecasts
+import com.volvo.weather.http.bean.AllForecasts
 import io.reactivex.Observable
 
 interface IAmapHttpClient {

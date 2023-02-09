@@ -1,4 +1,4 @@
-package com.example.myapplication.http.bean
+package com.volvo.weather.http.bean
 
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName

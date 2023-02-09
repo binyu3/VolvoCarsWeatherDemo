@@ -1,4 +1,4 @@
-package com.example.myapplication.http
+package com.volvo.weather.http
 
 object AmapContants {
     const val AMAP_HOST_URL = "https://restapi.amap.com/"

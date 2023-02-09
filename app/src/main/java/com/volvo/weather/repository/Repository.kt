@@ -1,7 +1,7 @@
-package com.example.myapplication.repository
+package com.volvo.weather.repository
 
-import com.example.myapplication.http.AmapHttpClient
-import com.example.myapplication.http.IAmapHttpClient
+import com.volvo.weather.http.AmapHttpClient
+import com.volvo.weather.http.IAmapHttpClient
 
 object Repository {
     fun http(): IAmapHttpClient? {

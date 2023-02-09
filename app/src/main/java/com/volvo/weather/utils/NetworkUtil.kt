@@ -1,8 +1,8 @@
-package com.example.myapplication.utils
+package com.volvo.weather.utils
 
 import android.content.Context
 import android.net.ConnectivityManager
-import com.example.myapplication.WeatherApplication
+import com.volvo.weather.WeatherApplication
 
 
 object NetworkUtil {

@@ -1,11 +1,11 @@
-package com.example.myapplication
+package com.volvo.weather
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.NonNull
 import androidx.recyclerview.widget.RecyclerView
-import com.example.myapplication.http.bean.AllForecasts
+import com.volvo.weather.http.bean.AllForecasts
 import java.util.*
 
 
@@ -16,6 +16,11 @@ class RvAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder?>() {
             allForecasts = ArrayList()
         }
         allForecasts!!.add(cityAllForecasts)
+        notifyDataSetChanged()
+    }
+
+    fun setData(cityAllForecasts: MutableList<AllForecasts>){
+        allForecasts = cityAllForecasts
         notifyDataSetChanged()
     }
 

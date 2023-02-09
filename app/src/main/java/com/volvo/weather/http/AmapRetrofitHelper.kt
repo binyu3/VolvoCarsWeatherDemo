@@ -1,4 +1,4 @@
-package com.example.myapplication.http
+package com.volvo.weather.http
 
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor

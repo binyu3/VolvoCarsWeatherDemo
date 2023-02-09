@@ -1,7 +1,7 @@
-package com.example.myapplication.http
+package com.volvo.weather.http
 
-import com.example.myapplication.http.bean.AllForecasts
-import com.example.myapplication.repository.Repository
+import com.volvo.weather.http.bean.AllForecasts
+import com.volvo.weather.repository.Repository
 import io.reactivex.Observable
 import io.reactivex.schedulers.Schedulers
 
@@ -25,7 +25,6 @@ class AmapHttpClient private constructor() : IAmapHttpClient {
     companion object {
         private var amapHttpClient: AmapHttpClient? = null
         private var amapService: AmapService? = null
-        //@kotlin.jvm.Synchronized
         fun registerInstance() {
             if (amapHttpClient == null) {
                 amapHttpClient = AmapHttpClient()
